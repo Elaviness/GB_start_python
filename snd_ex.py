@@ -1,4 +1,4 @@
-sec = input('Введите время в секундах')
+sec = input('Введите время в секундах: ')
 
 while True:
     if sec.isdigit():
@@ -7,7 +7,7 @@ while True:
     else:
         sec = input('Вы ввели не число, повторите попытку: ')
 
-hours = sec // 3600;
+hours = sec // 3600
 sec = sec - hours*3600
 
 minutes = sec // 60
