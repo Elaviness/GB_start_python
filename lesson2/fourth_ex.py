@@ -8,3 +8,4 @@ tmp = users_str.split(' ')
 
 for itm in tmp:
     print(f'{itm:.10}')
+    

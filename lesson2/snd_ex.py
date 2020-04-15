@@ -3,12 +3,16 @@
 При нечетном количестве элементов последний сохранить на своем месте.
 Для заполнения списка элементов необходимо использовать функцию input(). """
 
-new_list = input('Введите список для работы с ним: ')
+print('Вводите элементы, нажимайте enter \nдля окончания ввода просто нажмите enter')
+elem = input('')
+elem_list = []
+while elem:
+        elem_list.append(elem)
+        elem = input('')
+print(elem_list)
+
+for i in range(0, len(elem_list) -1,2):
+    elem_list[i], elem_list[i+1] = elem_list[i+1], elem_list[i]
 
 
-# print(new_list)
-
-# new_list = list(new_list)
-# print(type(new_list))
-# print(new_list)
-
+print(elem_list)
