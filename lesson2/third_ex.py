@@ -21,5 +21,5 @@ print(f'Результат списка: {result}')
 
 mounth_dict = dict(mounth_list)
 if mounth in mounth_dict.values():
-    result = mounth_dict.get(key)
+    result = mounth_dict.get(key) 
 print(f'Результат словаря: {result}')
