@@ -23,9 +23,11 @@ while True:
                if new_rate < itm:
                    tmp.insert(tmp.index(itm), new_rate)
                    break
-        print(f'Текущий рейтинг: {tmp}')
+            if tmp.count(new_rate) == 0:
+                tmp.append(new_rate)
+        print(f'Текущий рейтинг: {tmp[::-1]}')
     else:
             break
     new_rate = input('Если хотите продолжить, введите новое значение. Нечисловое значение расчитывается как завершение работы: ')    
-print(f'Итоговый рейтинг: {reversed(tmp)}')
+print(f'Итоговый рейтинг: {tmp[::-1]}')
  
