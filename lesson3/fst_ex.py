@@ -8,7 +8,7 @@ def division(a,b):
         return a / b
     except ZeroDivisionError:
         print('Деление на ноль невозможно.')
-        return None
+        return 
     # except ValueError:
     #     print('В одном из аргументов было введено не число, попробуйте еще раз.')
     #     return None
