@@ -7,13 +7,13 @@
 
 def my_pow_1(x,y):
     """Возведение в степень оператором ** """
-    return x**y
+    return (1/x)**abs(y)
 
 def my_pow_2(x,y):
     """ Возведение без оператора **"""
-    result = x
-    for i in range(1,y):
-        result *= x
+    result = (1/x)
+    for i in range(1,abs(y)):
+        result *= (1/x)
         i +=1
     return result
 
