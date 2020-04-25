@@ -15,13 +15,13 @@ for itm in str:
     tmp.append(itm)
 
 str = tmp
-for elem in str: #получаю подсписок
+for elem in str: # получаю подсписок
     idx = 0
     tmp = ''
-    for itm in elem: #строка из списка
+    for itm in elem: # строка из списка
         sum = 0
         if idx % 2 == 1:
-            for char in itm: #симовол из строки
+            for char in itm: # симовол из строки
                 if char.isdigit():
                     tmp += char
                 elif char == '(':
